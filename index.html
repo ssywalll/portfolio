@@ -39,7 +39,7 @@
                     <a class="nav-link" href="#projects">Projects</a>
                     <a class="nav-link" href="#services">Services</a>
                 </div>
-                <button class="btn btn-outline-danger d-lg-flex d-block mx-lg-0 mx-auto">Contact Me</button>
+                <a href="#contact" class="text-decoration-none"><button class="btn btn-outline-danger d-lg-flex d-block mx-lg-0 mx-auto">Contact Me</button></a>
             </div>
         </div>
     </nav>
@@ -51,9 +51,26 @@
             <div class="row d-flex align-items-center row-cols-lg-2 row-cols-1">
                 <div class="col pt-5 pt-lg-0 mb-lg-0 mb-5">
                     <h1 class="fw-bold mb-4 animate__animated animate__fadeInUp animate__delay-2s">Hi! I Am       <br>Noor Syawal</h1>
-                    <p class="lh-lg mb-4 animate__animated animate__fadeInUp animate__delay-2s">Saya adalah seorang Fullstack Developer yang mendalami Front - End Developer | UI UX Design | Back - End Developer</p>
+                    <p class="lh-lg mb-4 animate__animated animate__fadeInUp animate__delay-2s">Saya adalah seorang Junior Fullstack Developer yang mendalami Front - End Developer | UI UX Design | Back - End Developer</p>
                     <a href="#about"><button class="btn btn-danger me-2 px-sm-4 py-sm-2 px-3 py-2 animate__animated animate__fadeInUp animate__delay-2s">Hire Me</button></a>
-                    <button class="btn btn-outline-danger px-sm-4 py-sm-2 px-3 py-2">Know More</button>
+                    <button type="button" class="btn btn-outline-danger px-sm-4 py-sm-2 px-3 py-2 animate__animated animate__fadeInUp animate__delay-2s" data-bs-toggle="modal" data-bs-target="#exampleModal">Know More</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="d-flex align-items-center mt-4 animate__animated animate__fadeInUp animate__delay-2s">
                         <i class="fa-solid fa-people-roof fs-1 me-3"></i>
                         <p class="lh-lg m-0">Designer and Developer <br>
@@ -134,7 +151,7 @@
     <!-- Projects -->
     <div class="projects min-vh-100 d-flex align-items-center" id="projects">
         <div class="container">
-            <h1 class="fw-bold text-center mb-5">Projects</h1>
+            <h1 class="fw-bold text-center mb-5" data-aos="fade-up" data-aos-duration="1000">Projects</h1>
             <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4">
                 <div class="col text-center" data-aos="fade-up" data-aos-duration="1000">
                     <img src="image/img1.png" alt="" class="w-100 mb-3"> 
@@ -158,21 +175,6 @@
                     <p>di Projects ini saya membuat nya dengan menggunakan bahasa pemrograman : </p>
                     <p>Python</p>
                 </div>
-                <!-- <div class="col text-center">
-                    <img src="image/projects-4.jpg" alt="" class="w-100 mb-3">
-                    <h5 class="fw-bold">Pendataan siswa</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, consequuntur!</p>
-                </div>
-                <div class="col text-center">
-                    <img src="image/projects-5.jpg" alt="" class="w-100 mb-3">
-                    <h5 class="fw-bold">UI UX website agency</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, consequuntur!</p>
-                </div>
-                <div class="col text-center">
-                    <img src="image/projects-6.jpg" alt="" class="w-100 mb-3">
-                    <h5 class="fw-bold">Logo agency</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, consequuntur!</p>
-                </div> -->
             </div>
         </div>
     </div>
@@ -180,20 +182,44 @@
     <!-- Services -->
     <section class="services" id="services">
         <div class="container">
-            <h1 class="fw-bold text-center mb-5">Services</h1>
+            <h1 class="fw-bold text-center mb-5" data-aos="fade-up" data-aos-duration="1000">Services</h1>
             <div class="row row-cols-lg-3 row-cols-1 gx-lg-5 gx-0 px-sm-0 px-2">
-                <div class="col mb-lg-0 mb-3">
+                <div class="col mb-lg-0 mb-3" data-aos="fade-up" data-aos-duration="1000">
                     <h5 class="fw-bold border-bottom border-danger border-2 pb-2">Front - End Developer</h5>
                     <p>Pembuatan aplikasi berbasis web dengan menggunakan react atau vue</p>
                     <p>Pembuatan aplikasi berbasis mobile dengan menggunakan flutter</p>
                 </div>
-                <div class="col mb-lg-0 mb-3">
+                <div class="col mb-lg-0 mb-3" data-aos="fade-up" data-aos-duration="1000">
                     <h5 class="fw-bold border-bottom border-info border-2 pb-2">UI UX Design</h5>
                     <p>Pembuatan Tampilan layout sebuah website ataupun mobile dengan menggunakan figma</p>
                 </div>
-                <div class="col mb-lg-0 mb-3">
+                <div class="col mb-lg-0 mb-3" data-aos="fade-up" data-aos-duration="1000">
                     <h5 class="fw-bold border-bottom border-success border-2 pb-2">Back - End Developer</h5>
                     <p>Pembuatan sistem agar sebuah aplikasi berjalan dengan baik dengan menggunakan JavaScript, Python, dan PHP</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h1 class="fw-bold text-center mb-5" data-aos="fade-up" data-aos-duration="1000">Contact Me</h1>
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3" data-aos="fade-up" data-aos-duration="1000">
+                        <label for="exampleFormControlInput1" class="form-label">Username</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Username">
+                    </div>
+                    <div class="mb-3" data-aos="fade-up" data-aos-duration="1000">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3" data-aos="fade-up" data-aos-duration="1000">
+                        <label for="exampleFormControlTextarea1" class="form-label">Descrips</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger" data-aos="fade-up" data-aos-duration="1000">Submit</button>
                 </div>
             </div>
         </div>

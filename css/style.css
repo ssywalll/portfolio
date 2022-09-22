@@ -3,7 +3,17 @@
 }
 body {
     background-color: #FFFFDE;
-}C6EBC5
+}
+
+.header.sticky {
+    background-color: #293462;
+    border-bottom: 1px solid #0e1630;
+    transition: .3s;
+    position: fixed;
+    width: 100%;
+    z-index: 9999999;
+}
+
 .navbar {
     background: transparent;
 }
@@ -172,6 +182,11 @@ body {
 
 .projects h1 {
     color: #120f30;
+}
+
+.projects .row .col:nth-child(1) p {
+    font-size: 16px;
+    margin-left: 60px;
 }
 
 .services .row .col p {
@@ -385,7 +400,7 @@ body {
     }
 
     .container .row .col:nth-child(2) img:nth-child(1) {
-        width: 150px;
+        width: 200px;
     }
 
     .container .row .col:nth-child(2) img:nth-child(2) {
