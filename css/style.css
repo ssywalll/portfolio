@@ -6,7 +6,7 @@ body {
 }
 
 .header.sticky {
-    background-color: #293462;
+    background-color: #F5EFE6;
     border-bottom: 1px solid #0e1630;
     transition: .3s;
     position: fixed;
