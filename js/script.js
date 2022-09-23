@@ -16,23 +16,23 @@ window.addEventListener('scroll', function () {
     header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-const nama = document.querySelector(".form-control.name").value;
-const email = document.querySelector(".form-control.email").value;
-const message = document.querySelector(".form-control.message").value;
 
-function sendEmail() {
+
+const sendEmail = () => {
+
+    const nama = document.querySelector(".form-control.name").value;
+    const email = document.querySelector(".form-control.email").value;
+    const message = document.querySelector(".form-control.message").value;
+
     Email.send({
-        Host : "smtp.gmail.com",
+        Host : "smtp.elasticemail.com",
         Username : "noorsyawal6@gmail.com",
-        Password : "bengbeng112",
-        To : 'noorsyawal6@gmail.com',
-        From : nama,
+        Password : "D056CAD662A9616F8A6934A80BAEADE5016D",
+        To : "noorsyawal29@smk.belajar.id",
+        From : "noorsyawal6@gmail.com",
         Subject : email,
-        Body : `nama : ${nama} <br/> Email : ${email} <br/> Message : ${message}`
+        Body : `Nama : ${nama} <br/> Email : ${email} <br/> Message : ${message}`
     }).then(
-        message => alert("message sent successfully")
+        message => alert("Send Message Succesfully")
     );
 }
-
-
-console.log(sendEmail(email.send()));
